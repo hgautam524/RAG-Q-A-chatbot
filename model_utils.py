@@ -1,10 +1,14 @@
-from transformers import AutoTokenizer, AutoModelForCausalLM, pipeline
+from transformers import AutoTokenizer, AutoModelForSeq2SeqLM, pipeline
 
-tokenizer = AutoTokenizer.from_pretrained("mistralai/Mistral-7B-Instruct-v0.1")
-model = AutoModelForCausalLM.from_pretrained("mistralai/Mistral-7B-Instruct-v0.1", device_map="auto")
-generator = pipeline("text-generation", model=model, tokenizer=tokenizer)
+# Hugging Face model
+HF_MODEL = "google/flan-t5-base"
 
-def generate_answer(query):
-    context = "\n".join(retrieve_docs(query))
-    prompt = f"Context:\n{context}\n\nQuestion: {query}\nAnswer:"
-    return generator(prompt, max_new_tokens=150)[0]['generated_text']
+tokenizer = AutoTokenizer.from_pretrained(HF_MODEL)
+model = AutoModelForSeq2SeqLM.from_pretrained(HF_MODEL)
+
+qa_pipeline = pipeline("text2text-generation", model=model, tokenizer=tokenizer)
+
+def generate_hf_answer(context: str, query: str) -> str:
+    prompt = f"Answer the question based on the context.\n\nContext: {context}\n\nQuestion: {query}"
+    result = qa_pipeline(prompt, max_new_tokens=150)
+    return result[0]["generated_text"]

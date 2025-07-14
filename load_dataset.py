@@ -1,6 +1,6 @@
 import pandas as pd
 
-df = pd.read_csv("Training Dataset.csv")
+df = pd.read_csv("C:\\Users\\Admin\\RAG-Q-A-chatbot\\Training Dataset.csv")
 df.fillna("Unknown", inplace=True)
 
 # Create doc-style text for each row
