@@ -55,8 +55,7 @@ cd rag-qna-chatbot
 
 ### 2. Create a Virtual Environment (optional but recommended)
 ```bash
-Copy
-Edit
+
 python -m venv venv
 # Activate it
 venv\Scripts\activate     # Windows
@@ -64,8 +63,7 @@ source venv/bin/activate  # Mac/Linux
 ```
 ### 3. Install Dependencies
 ```bash
-Copy
-Edit
+
 pip install -r requirements.txt
 ```
 ### 4. Download the Dataset (if not included)
@@ -76,8 +74,7 @@ Place it in the root of the project folder.
 
 ### 5. Generate Embeddings & FAISS Index (Run Once)
 ```bash
-Copy
-Edit
+
 python embed_store.py
 ```
 This will:
@@ -92,8 +89,7 @@ This will:
 
 ### 6. Run the Chatbot App
 ```bash
-Copy
-Edit
+
 streamlit run app.py
 ```
 A browser window will open with a user interface where you can ask questions like:
@@ -104,8 +100,7 @@ A browser window will open with a user interface where you can ask questions lik
 
 ## 🧠 Example Output
 ```pgsql
-Copy
-Edit
+
 **Question:** Does high income guarantee loan approval?
 
 **Answer:** Even applicants with high income may be denied if they have poor credit history or inconsistent employment. Loan approval depends on multiple factors like credit history, employment status, and loan term.
@@ -113,8 +108,7 @@ Edit
 
 ## ✅ Requirements
 ```text
-Copy
-Edit
+
 streamlit
 pandas
 numpy
