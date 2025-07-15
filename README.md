@@ -48,66 +48,71 @@ A Retrieval-Augmented Generation (RAG) chatbot built using Hugging Face models a
 
 ### 1. Clone the Repository
 
-bash
+```bash
 git clone https://github.com/your-username/rag-qna-chatbot.git
 cd rag-qna-chatbot
-
+```
 
 ### 2. Create a Virtual Environment (optional but recommended)
-bash
+```bash
 Copy
 Edit
 python -m venv venv
 # Activate it
 venv\Scripts\activate     # Windows
 source venv/bin/activate  # Mac/Linux
-
+```
 ### 3. Install Dependencies
-bash
+```bash
 Copy
 Edit
 pip install -r requirements.txt
-4. Download the Dataset (if not included)
+```
+### 4. Download the Dataset (if not included)
 Download Training Dataset.csv from:
 🔗 Loan Approval Prediction Dataset
 
 Place it in the root of the project folder.
 
-5. Generate Embeddings & FAISS Index (Run Once)
-bash
+### 5. Generate Embeddings & FAISS Index (Run Once)
+```bash
 Copy
 Edit
 python embed_store.py
+```
 This will:
 
-Process the dataset
+- Process the dataset
 
-Create embeddings
+- Create embeddings
 
-Save a FAISS index (faiss_index.idx)
+- Save a FAISS index (faiss_index.idx)
 
-Save the documents (documents.npy)
+- Save the documents (documents.npy)
 
-6. Run the Chatbot App
-bash
+### 6. Run the Chatbot App
+```bash
 Copy
 Edit
 streamlit run app.py
+```
 A browser window will open with a user interface where you can ask questions like:
 
-"What happens if an applicant has no credit history?"
+- "What happens if an applicant has no credit history?"
 
-"How does being self-employed affect loan approval?"
+- "How does being self-employed affect loan approval?"
 
-🧠 Example Output
-pgsql
+## 🧠 Example Output
+```pgsql
 Copy
 Edit
 **Question:** Does high income guarantee loan approval?
 
 **Answer:** Even applicants with high income may be denied if they have poor credit history or inconsistent employment. Loan approval depends on multiple factors like credit history, employment status, and loan term.
-✅ Requirements
-text
+```
+
+## ✅ Requirements
+```text
 Copy
 Edit
 streamlit
@@ -117,23 +122,24 @@ faiss-cpu
 sentence-transformers
 transformers
 torch
-📌 To-Do (Optional Features)
- Add OpenAI/Gemini model toggle
+```
+## 📌 To-Do (Optional Features)
+ - Add OpenAI/Gemini model toggle
 
- Upload support for PDF/CSV files
+ - Upload support for PDF/CSV files
 
- Add chatbot memory/history
+ - Add chatbot memory/history
 
- Deploy to Hugging Face Spaces / Streamlit Cloud
+ - Deploy to Hugging Face Spaces / Streamlit Cloud
 
-📜 License
+## 📜 License
 This project is for educational purposes. Attribution required if reused.
 
-🤝 Contributing
+## 🤝 Contributing
 PRs are welcome! If you have suggestions or want to add features, feel free to open an issue or submit a pull request.
 
-👤 Author
-Built by [Your Name]
-📧 [your.email@example.com]
-🔗 GitHub: github.com/your-username
+## 👤 Author
+Built by Himanshu Gautam
+📧 hgautam524@gmail.com
+🔗 GitHub: github.com/hgautam524
 
