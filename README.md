@@ -48,7 +48,7 @@ A Retrieval-Augmented Generation (RAG) chatbot built using Hugging Face models a
 
 ### 1. Clone the Repository
 
-```bash
+bash
 git clone https://github.com/your-username/rag-qna-chatbot.git
 cd rag-qna-chatbot
 
