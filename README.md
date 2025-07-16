@@ -134,6 +134,6 @@ PRs are welcome! If you have suggestions or want to add features, feel free to o
 
 ## 👤 Author
 Built by Himanshu Gautam
-📧 hgautam524@gmail.com
-🔗 GitHub: github.com/hgautam524
+- 📧 hgautam524@gmail.com
+- 🔗 GitHub: github.com/hgautam524
 
